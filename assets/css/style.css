@@ -5,25 +5,42 @@
 }
 
 form{
-    background-color: red;
     max-width: 40vw;
     display: flex;
     flex-direction: column; 
     margin: 5vh auto;
     padding: 5vh 7vw 5vh 2vw;
-   
+border: 1px solid black;   
 }
 
-section{
-    background-color: blue;
-}
 
 section>article{
-    background-color: green;
     display: flex;
 
 }
 
 section>article>div:nth-of-type(2){
     color: rgba(245, 222, 179, 0); /* * Nachname durchsichig */
+}
+
+/* * mehrere ids auf einmal ansprechen */
+#email, #thema, #submit {
+    width: 31vw;
+}
+
+#vorName, #nachName {
+width: 14vw;
+}
+
+#nachName{
+    margin-left: 3vw;
+}
+
+#submit{
+    background-color: #4895a2;
+}
+
+#submit:hover{
+ background-color: #0b1636;   
+ color: white;
 }
